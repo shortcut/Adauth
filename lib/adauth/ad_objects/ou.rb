@@ -22,7 +22,7 @@ module Adauth
             # Object Net::LDAP filter
             #
             # Used to restrict searches to just this object
-            ObjectFilter = Net::LDAP::Filter.eq("objectClass", "organizationalUnit")
+            ObjectFilter = Net::LDAP::Filter.eq('objectClass', 'organizationalUnit')
         end
     end
 end

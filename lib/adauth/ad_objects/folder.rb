@@ -22,10 +22,10 @@ module Adauth
             # Object Net::LDAP filter
             #
             # Used to restrict searches to just this object
-            ObjectFilter = Net::LDAP::Filter.eq("objectClass", "top")
+            ObjectFilter = Net::LDAP::Filter.eq('objectClass', 'top')
             
             def self.root
-              self.new(Adauth.connection.search(:filter => Net::LDAP::Filter.eq("objectClass", "Domain")).first)
+              self.new(Adauth.connection.search(:filter => Net::LDAP::Filter.eq('objectClass', 'Domain')).first)
             end
         end
     end
