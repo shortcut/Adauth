@@ -7,7 +7,7 @@ module Adauth
             #
             # Sets the html id to "adauth_login" and the form destination to "/adauth"
             def adauth_form
-        	    form_tag '/adauth', :id => "adauth_login" do
+        	    form_tag '/adauth', :id => 'adauth_login' do
         	        yield.html_safe
     	        end
             end

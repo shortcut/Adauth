@@ -25,8 +25,8 @@ module Adauth
             
             # Object Net::LDAP filter
             #
-            # Used to restrict searches to just this object
-            ObjectFilter = Net::LDAP::Filter.eq("objectClass", "group")
+            # Used to restrict searches' to just this object
+            ObjectFilter = Net::LDAP::Filter.eq('objectClass', 'group')
                 
             # Returns all the objects which are members of this group
             def members
