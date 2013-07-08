@@ -20,7 +20,7 @@ module Adauth
                     :last_name => :sn,
                     :email => :mail,
                     :name => :name,
-                    :passwordLastSet => :pwdlastset
+                    :passwordLastSet => :pwdlastset,
                     :cn_groups => [ :memberof,
                         Proc.new {|g| g.sub(/.*?CN=(.*?),.*/, '\1')} ]
                     }
